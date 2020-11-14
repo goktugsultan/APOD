@@ -40,7 +40,9 @@ export default function Detail() {
         }
     }, [])
 
-    if (!photoData) return <div />
+    if (!photoData) return (<div>
+        <h1>data yükleniyor</h1>
+    </div>)
 
     return (
         <div className="detail-container">
